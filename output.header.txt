@@ -1,0 +1,1 @@
+genome taxon genome_length completeness redundancy
