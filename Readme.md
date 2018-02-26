@@ -38,7 +38,7 @@ Header for all of these files is `genome taxon genome_length completeness redund
 git clone https://github.com/sstevens2/checkm-chtc-pipeline
 ```
 2. Move all of your `.fna` genome/bin/MAG/SAG files into the cloned repo.
-1. Make the `bins_to_classify.txt` file by `ls`ing the `.fna` files
+3. Make the `bins_to_classify.txt` file by `ls`ing the `.fna` files
 	- Checkm requires they end in the extention `.fna`
 	- If you are submitting more than 10,000 genomes, you will have to split them up into separate submissions because this is the max you can submit to one job on CHTC.
 	- Do not include the `refs/` part of the path if the files are in the `refs` directory already.
@@ -51,12 +51,12 @@ cd refs/
 ls *.fna > ../bins_to_classify.txt
 cd ..
 ```
-2. Move the `.fna` files to a directory called `refs/`, if they already aren't there.
+4. Move the `.fna` files to a directory called `refs/`, if they already aren't there.
 ```
 mkdir refs/
 mv *.fna refs/
 ```
-3. Submit the jobs
+5. Submit the jobs
 ```
 condor_submit chtc-checkm.sub
 ```
