@@ -74,7 +74,7 @@ condor_submit chtc-checkm-all.sub
 
 #### Output
 
-- `genomename_checkm.tgz` - which is a zipped folder of all the checkm output for that run.
+- `genomename_checkm.tgz` -  A zipped folder of all the checkm output for that run.
 
 
 
