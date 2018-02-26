@@ -1,19 +1,19 @@
-# 16checkm.sub
+# chtc-checkm.sub
 #
 #
 # Specify the HTCondor Universe
 universe = docker
 docker_image = sstevens/checkm:latest
 
-log = 16checkm_$(Cluster).log
-error = 16checkm_$(Cluster)_$(Process).err
+log = chtc-checkm_$(Cluster).log
+error = chtc-checkm_$(Cluster)_$(Process).err
 requirements = (OpSysMajorVer == 7)
 #
 # Specify your executable, arguments, and a file for HTCondor to store standard
 #  output.
-executable = 16checkm.sh
+executable = chtc-checkm.sh
 arguments = $(bin)
-output = 16checkm_$(Cluster).out
+output = chtc-checkm_$(Cluster).out
 #
 # Specify that HTCondor should transfer files to and from the
 #  computer where each job runs.
