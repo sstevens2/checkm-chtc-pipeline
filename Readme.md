@@ -64,7 +64,7 @@ condor_submit chtc-checkm.sub
 
 ### What if I want to get all the checkm results not just the results parsed above?
 
-If there is additional if you want from the checkm results or you want the full results back for each lineage specific run, you can use the `chtc-checkm-all.sub` and `chtc-checkm-all.sh` scripts.
+If there is additional info you want from the checkm results for each lineage specific run, you can use the `chtc-checkm-all.sub` and `chtc-checkm-all.sh` scripts.
 
 
 Inputs are the same as above but with the `all` versions of the scripts.  And you can run it with the same directions as above, except the submit command is changed to:
