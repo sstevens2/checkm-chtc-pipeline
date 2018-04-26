@@ -39,7 +39,11 @@ git clone https://github.com/sstevens2/checkm-chtc-pipeline
 ```
 2. Move all of your `.fna` genome/bin/MAG/SAG files into the cloned repo.
 3. Make the `bins_to_classify.txt` file by `ls`ing the `.fna` files
-	- Checkm requires they end in the extention `.fna`
+	- Checkm requires they end in the extention `.fna`.  Code below for fixing the extensions. 
+		```
+		for filename in *.fa; do cp $filename ${filename%.fa}.fna; done
+		## rm *.fa  # run this if the above looks like it worked
+		```
 	- If you are submitting more than 10,000 genomes, you will have to split them up into separate submissions because this is the max you can submit to one job on CHTC.
 	- Do not include the `refs/` part of the path if the files are in the `refs` directory already.
 ```
