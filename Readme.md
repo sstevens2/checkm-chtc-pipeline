@@ -3,7 +3,7 @@
 ### Running the pipeline 
 
 This pipeline includes scripts for running checkm on a group of genomes and getting back 
-a group of files for each genome containing the completeness and redundancy results.  This pipeline is written for an [HTCondor system](https://research.cs.wisc.edu/htcondor/), specifically [UW-Madison's CHTC's HPC cluster](http://chtc.cs.wisc.edu/)
+a group of files for each genome containing the completeness and redundancy results.  This pipeline is written for an [HTCondor system](https://research.cs.wisc.edu/htcondor/), specifically [UW-Madison's CHTC's HPC cluster](http://chtc.cs.wisc.edu/) using this [docker image for checkm](https://hub.docker.com/r/sstevens/checkm/).
 
 #### Input
 - `chtc-checkm.sh` - the script for generating the output files below
