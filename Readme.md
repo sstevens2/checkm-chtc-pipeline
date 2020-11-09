@@ -57,7 +57,6 @@ cd ..
 ```
 4. Move the `.fna` files to a directory called `refs/`, if they already aren't there.
 ```
-mkdir refs/
 mv *.fna refs/
 ```
 5. Submit the jobs
